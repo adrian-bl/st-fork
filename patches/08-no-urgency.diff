@@ -1,0 +1,13 @@
+diff --git a/x.c b/x.c
+index 210f184..c57cb42 100644
+--- a/x.c
++++ b/x.c
+@@ -1709,8 +1709,6 @@ xseturgency(int add)
+ void
+ xbell(void)
+ {
+-	if (!(IS_SET(MODE_FOCUSED)))
+-		xseturgency(1);
+ 	if (bellvolume)
+ 		XkbBell(xw.dpy, xw.win, bellvolume, (Atom)NULL);
+ }
